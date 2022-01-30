@@ -9,8 +9,8 @@ import pymongo as mongo
 load_dotenv(find_dotenv())
 
 bot_token = os.environ.get('TOKEN')
-guild_id_1 = os.environ.get('GUILD_1')
-guild_id_2 = os.environ.get('GUILD_2')
+guild_id_1 = int(os.environ.get('GUILD_1'))
+guild_id_2 = int(os.environ.get('GUILD_2'))
 
 bot = discord.Bot()
 
